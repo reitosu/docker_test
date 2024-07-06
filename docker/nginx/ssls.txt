@@ -1,0 +1,9 @@
+JP
+Tokyo
+
+
+
+localhost
+
+nginx
+
