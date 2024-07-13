@@ -14,13 +14,12 @@ services:
     volumes:
       - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf
 
-  deno:
-    container_name: deno
+  echo:
+    container_name: echo
     build:
       context: .
-      dockerfile: ./docker/Deno/Dockerfile
+      dockerfile: ./docker/echo/Dockerfile
     ports:
       - 1993:1993
-    volumes:
-      - ./src:/app
+    working_dir: /app
     tty: true
