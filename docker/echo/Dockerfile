@@ -11,7 +11,8 @@ RUN go mod init main \
 ENV CGO_ENABLED=0 \
   GOOS=linux \
   GOARCH=amd64
-EXPOSE 1993
+
+EXPOSE 3030
 
 
 CMD ["go", "run", "main.go"]
